@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fine-tuning-claim-audit"
+version = "0.1.0"
+description = "Offline documentation claim auditor for weight updates"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+
+[project.scripts]
+fine-tuning-claim-audit = "fine_tuning_claim_audit.audit:main"
+
+[tool.setuptools.packages.find]
+include = ["fine_tuning_claim_audit*"]
